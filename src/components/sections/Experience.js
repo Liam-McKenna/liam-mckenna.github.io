@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Experience() {
   return (
     <div>
@@ -34,7 +32,7 @@ export default function Experience() {
           <h3>💼 Web Support Intern, Glowfox |</h3> (Aug 2020 - Oct 2021)
         </summary>
         - Worked closely with B2B integration of the Glofox Web platform into
-        the clients' dedicated websites. First line of support for all web
+        the clients dedicated websites. First line of support for all web
         development queries both internally and externally.
       </details>
       <details>
@@ -50,7 +48,7 @@ export default function Experience() {
           (Jun 2018 - Jan 2020)
         </summary>
         - Specialist IT support to first level agents, resolving major issues
-        with clients' software and hardware. Active Directory provisioning.
+        with clients software and hardware. Active Directory provisioning.
         Coaching & mentorship of peers. Control of Knowledge Base.
       </details>
       <details>

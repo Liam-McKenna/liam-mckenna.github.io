@@ -23,7 +23,7 @@ export default function SkillsAndTools() {
             <td>Git</td>
             <td>Azure</td>
             <td>Photoshop</td>
-            <td>UML/ERD's</td>
+            <td>UML/ERDs</td>
             <td>Scrum</td>
           </tr>
           <tr>
