@@ -1,105 +1,91 @@
 import styles from "./skills.module.scss";
 
 export default function SkillsAndTools() {
-  return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>🔧 Skills and recent tools</h1>
+  const skills = {
+    Frontend: [
+      "HTML, CSS, Sass",
+      "JavaScript, JSX",
+      "React",
+      "Next.Js",
+      "JSON",
+      "Redux",
+      "Framer Motion",
+
+      "Chart.js",
+    ],
+    Backend: [
+      "Node",
+      "Express.JS",
+      "Python",
+      "Django, DRF",
+      "Anaconda",
+      "postgresql",
+      "SQL",
+    ],
+    "CLI & Version Control": ["Git", "GitHub", "GitLab", "Docker", "WSL"],
+    DevOps: ["Azure", "AWS", "Docker", "Firebase", "Netlify", "Github Pages"],
+    "Design & Tools": [
+      "Photoshop",
+      "Illustrator",
+      "Figma",
+      "Premiere Pro",
+      "VS Code",
+      "Trello",
+    ],
+    "Data Modeling": ["UML/ERDs", "Datagrip", "MongoDB Atlas"],
+    "Project Management": [
+      "Scrum",
+      "Agile",
+      "Asana",
+      "User Stories",
+      "Stakeholder Management",
+      "Sprint Planning",
+    ],
+  };
+
+  const tableHeaders = Object.keys(skills);
+  const tableRows = Object.values(skills);
+
+  const TableBody = () => {
+    const maxRows = tableRows.reduce(
+      (max, arr) => Math.max(max, arr.length),
+      0
+    );
+
+    return (
+      <tbody>
+        {Array.from({ length: maxRows }).map((_, rowIndex) => (
+          <tr key={rowIndex}>
+            {tableRows.map((column, columnIndex) => (
+              <td key={columnIndex}>
+                {column[rowIndex] ? column[rowIndex] : ""}
+              </td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    );
+  };
+
+  const Table = () => {
+    return (
       <table className={styles.table}>
         <thead>
           <tr>
-            <th>Frontend</th>
-            <th>Backend</th>
-            <th>CLI & Version Control</th>
-            <th>DevOps</th>
-            <th>Design & Tools</th>
-            <th>Data Modeling</th>
-            <th>Project Management</th>
+            {tableHeaders.map((header, index) => {
+              return <th key={index}>{header}</th>;
+            })}
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>HTML, CSS</td>
-            <td>Node</td>
-            <td>Git</td>
-            <td>Azure</td>
-            <td>Photoshop</td>
-            <td>UML/ERDs</td>
-            <td>Scrum</td>
-          </tr>
-          <tr>
-            <td>JavaScript</td>
-            <td>Express.JS</td>
-            <td>GitHub</td>
-            <td>AWS</td>
-            <td>Illustrator</td>
-            <td></td>
-            <td>Agile</td>
-          </tr>
-          <tr>
-            <td>JSX</td>
-            <td>Python</td>
-            <td>GitLab</td>
-            <td>Docker</td>
-            <td>Figma</td>
-            <td></td>
-            <td>Asana</td>
-          </tr>
-          <tr>
-            <td>JSON</td>
-            <td>Django, DRF</td>
-            <td>Docker</td>
-            <td>Firebase</td>
-            <td>Premiere Pro</td>
-            <td></td>
-            <td>User Stories</td>
-          </tr>
-          <tr>
-            <td>React</td>
-            <td>Anaconda</td>
-            <td>WSL</td>
-            <td>Netlify</td>
-            <td>VS Code</td>
-            <td></td>
-            <td>Stakeholder Management</td>
-          </tr>
-          <tr>
-            <td>Redux</td>
-            <td>postgresql</td>
-            <td></td>
-            <td></td>
-            <td>Trello</td>
-            <td></td>
-            <td>Sprint Planning</td>
-          </tr>
-          <tr>
-            <td>Framer Motion</td>
-            <td>SQL</td>
-            <td></td>
-            <td></td>
-            <td>Datagrip</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Next.Js</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>MongoDB Atlas</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Chart.js</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
+        <TableBody />
       </table>
+    );
+  };
+
+  return (
+    <div className={styles.container}>
+      <h1 className={styles.title}>🔧 Skills and recent tools</h1>
+      <Table />
     </div>
   );
 }

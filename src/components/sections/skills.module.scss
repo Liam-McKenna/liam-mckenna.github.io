@@ -13,9 +13,10 @@
     border-collapse: separate;
     border-spacing: 0;
     text-align: center;
-    width: 80%;
+    width: 100%;
     border-radius: 10px; 
     overflow: hidden;
+    border: 2px solid #1c1b32;
   }
 
   .table th, .table td {
@@ -25,8 +26,7 @@
 
   .table td {
     padding: 8px;
-    border-left: 1px solid #1c1b32;
-    border-right: 1px solid #1c1b32;
+    border-left: 2px solid #1c1b32;
   }
   
   
