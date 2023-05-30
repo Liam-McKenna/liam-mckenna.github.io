@@ -1,7 +1,7 @@
 export default function Education() {
   return (
     <div>
-      # 🎓 **Education**
+      <h2>🎓 Education</h2>
       <details>
         <summary>
           <h3>🎓 Technology University Dublin | Sept 2018 - 2023</h3>

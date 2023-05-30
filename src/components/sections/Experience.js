@@ -1,21 +1,35 @@
 export default function Experience() {
   return (
     <div>
-      # 🚀 **Experience**
+      <h1>🚀 Experience</h1>
       <details>
         <summary>
           <h3>💼 Software Engineer, Nuritas |</h3> (Oct 2021 - Present)
         </summary>
-        - Developed and maintained an internal data warehouse and user
-        interface, handling access for scientists to view, edit, modify, and
-        perform tasks on millions of bioinformatics and proteomics records. -
-        Collaborated with Data Science teams to build APIs and logic functions
-        for machine learning models based on the data captured in the warehouse.
-        - Championed UI/UX design, improving and implementing new designs into
-        React. - Utilized Docker for creating and running development and
-        production environments, and GitLab for version control. - Started as a
-        Junior Developer, promoted after a year due to demonstrated skill and
-        dedication.
+        <ul>
+          <li>
+            Developed and maintained an internal data warehouse and user
+            interface, handling access for scientists to view, edit, modify, and
+            perform tasks on millions of bioinformatics and proteomics records.
+          </li>
+          <li>
+            Collaborated with Data Science teams to build APIs and logic
+            functions for machine learning models based on the data captured in
+            the warehouse.
+          </li>
+          <li>
+            Championed UI/UX design, improving and implementing new designs into
+            React.
+          </li>
+          <li>
+            Utilized Docker for creating and running development and production
+            environments, and GitLab for version control.
+          </li>
+          <li>
+            Started as a Junior Developer, promoted after a year due to
+            demonstrated skill and dedication.
+          </li>
+        </ul>
       </details>
       <details>
         <summary>
