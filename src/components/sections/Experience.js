@@ -1,89 +1,70 @@
+"use client";
+
+import React, { useState } from "react";
+import styles from "./experience.module.scss";
+import Card from "./Card";
+
 export default function Experience() {
+  const jobs = [
+    {
+      title: "Software Engineer",
+      location: "Nuritas",
+      time: "Current - 1y 8mos",
+      description:
+        "Developed and maintained an internal data warehouse and user interface Collaborated with Data Science teams to build APIs and logic functions Championed UI/UX design, improving and implementing new designs into React",
+    },
+    {
+      title: "Full Stack Web Developer",
+      location: "Freelance",
+      time: "5mos",
+      description:
+        "Working directly with Clients to design and develope full stack website aplications. Focus on the MERN stack with React frontend and Node/Express backend. Data bases focused on SQL or MongoDB. Designwork in photoshop and Figma",
+    },
+    {
+      title: "Web Support Intern",
+      location: "Glowfox",
+      time: "5mos",
+      description:
+        "Worked Closely with B2B the integration of the Glofox Web plaform into the clients dedicated websites. First line of support of all web Developement quieres both internally and externally.",
+    },
+    {
+      title: "Software Developer Intern",
+      location: "Cloudtech Ltd",
+      time: "8mos",
+      description:
+        "Custom Software Solutions. CRM Setup & Management. Native & Web development. Project Management & Documentation.",
+    },
+    {
+      title: "1st & 2nd Tech Support.",
+      location: "Hewlett Packard Enterprise",
+      time: "1y 6mos",
+      description:
+        "Specialist IT support to first level agents. resolving major issues with clients software and hardware. Active Directory provisioning. Coaching & mentorship of peers. Control of Knowledge Base.",
+    },
+    {
+      title: "Audio Visual Technician",
+      location: "Sonics AVI",
+      time: "10mos",
+      description:
+        "Provide IT support to engineers. First line of IT support to client. Building comms racks. Hardware install & setup. face to face client support. Cable crimping & running.",
+    },
+    {
+      title: "Graphic Designer & Media Manager.",
+      location: "Sin Nightclub",
+      time: "5y 3m",
+      description:
+        "Full creative control of the company. Full Adobe Suite competence. Start-to-finish design projects. Budget setting and cash flow. Club and event creation. Promotion and marketing.",
+    },
+  ];
+
   return (
     <div>
-      <h1>🚀 Experience</h1>
-      <details>
-        <summary>
-          <h3>💼 Software Engineer, Nuritas |</h3> (Oct 2021 - Present)
-        </summary>
-        <ul>
-          <li>
-            Developed and maintained an internal data warehouse and user
-            interface, handling access for scientists to view, edit, modify, and
-            perform tasks on millions of bioinformatics and proteomics records.
-          </li>
-          <li>
-            Collaborated with Data Science teams to build APIs and logic
-            functions for machine learning models based on the data captured in
-            the warehouse.
-          </li>
-          <li>
-            Championed UI/UX design, improving and implementing new designs into
-            React.
-          </li>
-          <li>
-            Utilized Docker for creating and running development and production
-            environments, and GitLab for version control.
-          </li>
-          <li>
-            Started as a Junior Developer, promoted after a year due to
-            demonstrated skill and dedication.
-          </li>
-        </ul>
-      </details>
-      <details>
-        <summary>
-          <h3>💼 Full Stack Web Developer, Full Spectrum |</h3> (May 2021 - Oct
-          2021)
-        </summary>
-        - Working directly with clients to design and develop full stack website
-        applications. Focus on the MERN stack with React frontend and
-        Node/Express backend. Databases focused on SQL or MongoDB. Design work
-        in Photoshop and Figma.
-      </details>
-      <details>
-        <summary>
-          <h3>💼 Web Support Intern, Glowfox |</h3> (Aug 2020 - Oct 2021)
-        </summary>
-        - Worked closely with B2B integration of the Glofox Web platform into
-        the clients dedicated websites. First line of support for all web
-        development queries both internally and externally.
-      </details>
-      <details>
-        <summary>
-          <h3>💼 Software Developer, Cloudtech Ltd |</h3> (Jan 2020 - Feb 2021)
-        </summary>
-        - Custom Software Solutions, CRM Setup & Management. Native & web
-        development. Project Management & Documentation.
-      </details>
-      <details>
-        <summary>
-          <h3>💼 1st & 2nd lvl Tech Support, Hewlett Packard Enterprise |</h3>{" "}
-          (Jun 2018 - Jan 2020)
-        </summary>
-        - Specialist IT support to first level agents, resolving major issues
-        with clients software and hardware. Active Directory provisioning.
-        Coaching & mentorship of peers. Control of Knowledge Base.
-      </details>
-      <details>
-        <summary>
-          <h3>💼 Audio Visual Technician, Sonics Avi |</h3> (Aug 2017 - Jun
-          2018)
-        </summary>
-        - Provided IT support to engineers. First line of IT support to clients.
-        Building comms racks. Hardware installation & setup. Face-to-face client
-        support. Cable crimping & running.
-      </details>
-      <details>
-        <summary>
-          <h3>💼 Graphic Designer & Media Manager, Sin Nightclub |</h3> (May
-          2012 - Aug 2017)
-        </summary>
-        - Full creative control of the company. Full Adobe Suite competence.
-        Start-to-finish design projects. Budget setting and cash flow. Club and
-        event creation. Promotion and marketing.
-      </details>
-      ---
+      <h1 className="flex justify-center">Experience</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        {jobs.map((job, i) => {
+          return <Card content={job} key={i} />;
+        })}
+      </div>
     </div>
   );
 }
