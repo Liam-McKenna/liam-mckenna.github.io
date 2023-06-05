@@ -2,7 +2,7 @@ import styles from "./introduction.module.scss";
 
 export default function Introduction() {
   return (
-    <div>
+    <div id="intro">
       <div className={styles.container}>
         <div className="flex flex-col text-center w-100">
           <h1>Liam McKenna</h1>

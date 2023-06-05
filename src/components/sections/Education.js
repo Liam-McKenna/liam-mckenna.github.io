@@ -18,7 +18,7 @@ export default function Education() {
   ];
 
   return (
-    <div>
+    <div id="education">
       <div>
         <h1 className="flex justify-center">🎓 Education</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">

@@ -58,7 +58,7 @@ export default function Experience() {
   ];
 
   return (
-    <div>
+    <div id="experience">
       <h1 className="flex justify-center">Experience</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {jobs.map((job, i) => {
