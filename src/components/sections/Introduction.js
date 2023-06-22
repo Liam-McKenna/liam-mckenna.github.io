@@ -1,8 +1,15 @@
+"use client";
+import React, { useRef } from "react";
 import styles from "./introduction.module.scss";
 
+//components
+import Button from "../../components/button/Button";
+
 export default function Introduction() {
+  const introRef = useRef(null);
+
   return (
-    <div id="intro">
+    <div id="intro" ref={introRef}>
       <div className={styles.container}>
         <div className="flex flex-col text-center w-100">
           <h1>Liam McKenna</h1>
@@ -27,7 +34,6 @@ export default function Introduction() {
             and Computer Science, striving to make my mark in the technology
             industry.
           </div>
-
           <div className="bg-[#1C1B32] p-6 rounded-lg w-1/2">
             <h2 className="text-white text-xl font-bold mb-3">
               📞 Contact Information:
@@ -46,6 +52,8 @@ export default function Introduction() {
                 </a>
               </li>
             </ul>
+            <Button text={"Word"} />
+            <Button text={"PDF"} />
           </div>
         </div>
       </div>

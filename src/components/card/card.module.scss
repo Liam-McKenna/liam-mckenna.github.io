@@ -1,0 +1,48 @@
+.card {
+  position: relative;
+  width: 350px;
+  height: 200px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    background-color: #1c1b32;
+    outline: 2px solid #705DA6;
+    stroke-width: 2;
+    
+    .title {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+    
+    .company {
+      font-size: 0.6em;
+      letter-spacing: .6em;
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
+    .employment {
+      font-size: 0.5em;
+      letter-spacing: .3em;
+      opacity: 0.8;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+    
+    .description {
+      font-size: 1em;
+    }
+
+    .triangle {
+      height: 51px;
+      width: 40px;
+      background-color: #705DA6;
+      position: relative;
+      clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+      transform: rotate(-45deg);
+      border-radius: 60px 20px 60px 5px;
+    }
+  }
+  
