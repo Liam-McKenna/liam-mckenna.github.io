@@ -30,10 +30,10 @@ width: 500px;
 }
 .downloadResume{
  color: #ffcb6b;
- padding: 10px;
+ padding: .4vw .6vw .4vw .6vw;
  font-size: 1.0vw;
- border: 2px solid #ffcb6b;
- border-radius: 60px;
+ border: .2vw solid #ffcb6b;
+ border-radius: 120px;
  transition: all .3s ease-in-out;
  cursor: pointer;
  &:hover {
@@ -59,6 +59,7 @@ width: 500px;
   .mouseScroll {
     width: 50px;
     height: 90px;
+    min-height: 90px;
     margin: 5rem 0 0 0;
     border: 3px solid white;
     border-radius: 60px;
