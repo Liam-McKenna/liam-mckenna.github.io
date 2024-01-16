@@ -1,14 +1,11 @@
+.sectionContainer{
+  padding: 5rem;
+}
 .cardContainer {
   display: grid;
   grid-gap: 1rem;
   width: 100%;
   justify-content: center;
   grid-template-columns: repeat(auto-fill, 350px);
-  // @media (min-width: $breakpoint-small) {
-  //   grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-  // }
 
-  // @media (min-width: $breakpoint-medium) {
-  //   grid-template-columns: repeat(auto-fill, minmax(33.33%, 1fr));
-  // }
 }

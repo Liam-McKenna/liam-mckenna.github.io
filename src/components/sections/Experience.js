@@ -83,10 +83,7 @@ export default function Experience() {
   ];
 
   return (
-    <div
-      id="experience"
-      className="w-full flex flex-col justify-center items-center"
-    >
+    <div id="experience" className={styles.sectionContainer}>
       <h1 className="flex justify-center">Experience</h1>
       <div className={styles.cardContainer}>
         {jobs.map((job, i) => {

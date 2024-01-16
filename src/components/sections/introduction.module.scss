@@ -1,10 +1,9 @@
 .container{
-    height: 100vh;
+    height: 86vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    // gap: 2rem;
     padding-bottom: 10rem;
 }
 
@@ -38,7 +37,6 @@ width: 500px;
  transition: all .3s ease-in-out;
  cursor: pointer;
  &:hover {
-  // color:yellow;
   transform: scale(1.1);
 }
  &:active {
@@ -49,12 +47,12 @@ width: 500px;
 
 @media (min-width: 1280px) {
     .nameText {
-      font-size: calc(1280px * 0.09); /* Adjust 0.09 to the same ratio used with vw above */
+      font-size: calc(1280px * 0.09); 
     }
   }
 @media (min-width: 1280px) {
     .titleText {
-      font-size: calc(1280px * 0.015); /* Adjust 0.09 to the same ratio used with vw above */
+      font-size: calc(1280px * 0.015); 
     }
   }
   
