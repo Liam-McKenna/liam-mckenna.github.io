@@ -1,29 +1,14 @@
-.dropdown {
-    position: relative;
-    display: inline-block;
-    background-color: red;
-  }
-  
-  .dropdown-title {
-    cursor: pointer;
-  }
-  
-  .dropdown-items {
-    display: block;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-item {
-    padding: 12px 16px;
-    text-decoration: none;
-    color: black;
-  }
-  
-  .dropdown-item:hover {
-    background-color: #f1f1f1;
-  }
-  
+.cardContainer {
+  display: grid;
+  grid-gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 350px);
+  // @media (min-width: $breakpoint-small) {
+  //   grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  // }
+
+  // @media (min-width: $breakpoint-medium) {
+  //   grid-template-columns: repeat(auto-fill, minmax(33.33%, 1fr));
+  // }
+}

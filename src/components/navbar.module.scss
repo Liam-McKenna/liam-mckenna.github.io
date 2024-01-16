@@ -8,9 +8,10 @@
     align-items: center;
     padding: 0 20px;
     background-color: #1c1b326a;
+    z-index: 6;
 }
 
-.navbar {
+.navbar { 
     background-color: transparent;
     position: fixed;
     max-width: 1280px;
@@ -22,20 +23,16 @@
     align-items: center;
     padding: 0 20px;
     z-index: 6;
-
-    // background-color: black;
   }
   .blur{
     width: 100%;
     height: 60px;
-    // background-color: #007bff;
-    // filter: blur(10px);
     z-index: 5;
     backdrop-filter: blur(10px)
   }
   
   .navbar a {
-    color: #ffffff;
+    color: #CBACFF;
     text-decoration: none;
     font-size: 18px;
   }

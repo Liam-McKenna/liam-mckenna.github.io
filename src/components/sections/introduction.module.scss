@@ -1,7 +1,11 @@
 .container{
+    height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    gap: 2rem;
+    // gap: 2rem;
+    padding-bottom: 10rem;
 }
 
 .intro{
@@ -11,7 +15,83 @@ width: 800px;
 width: 500px;
 }
 
-.componentHighlight{
- color: #ffcb6b;
- font-weight: bold; 
+.nameText  {
+    font-size: 9vw;
+    white-space: nowrap;
+    width: 100%;
+    margin: 0;
+    
 }
+
+
+.titleText{
+ color: #ffcb6b;
+ font-size: 1.5vw;
+ font-weight: bold;
+}
+.downloadResume{
+ color: #ffcb6b;
+ padding: 10px;
+ font-size: 1.0vw;
+ border: 2px solid #ffcb6b;
+ border-radius: 60px;
+ transition: all .3s ease-in-out;
+ cursor: pointer;
+ &:hover {
+  // color:yellow;
+  transform: scale(1.1);
+}
+ &:active {
+  transition: all .1s ease-in-out;
+  transform: scale(1);
+}
+}
+
+@media (min-width: 1280px) {
+    .nameText {
+      font-size: calc(1280px * 0.09); /* Adjust 0.09 to the same ratio used with vw above */
+    }
+  }
+@media (min-width: 1280px) {
+    .titleText {
+      font-size: calc(1280px * 0.015); /* Adjust 0.09 to the same ratio used with vw above */
+    }
+  }
+  
+  .mouseScroll {
+    width: 50px;
+    height: 90px;
+    margin: 5rem 0 0 0;
+    border: 3px solid white;
+    border-radius: 60px;
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      border-radius: 50%;
+      opacity: 1;
+      animation: wheel 2s infinite;
+      -webkit-animation: wheel 2s infinite;
+    }
+  }
+  
+  @keyframes wheel {
+    to {
+      opacity: 0;
+      top: 60px;
+    }
+  }
+  
+  @-webkit-keyframes wheel {
+    to {
+      opacity: 0;
+      top: 60px;
+    }
+  }
