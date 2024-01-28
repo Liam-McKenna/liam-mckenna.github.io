@@ -1,11 +1,10 @@
 .sectionContainer{
-  padding: 5rem;
+  width: 100%;
 }
 .cardContainer {
   display: grid;
+  grid-template-columns: repeat(auto-fill, 330px);
   grid-gap: 1rem;
   width: 100%;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, 350px);
-
 }
