@@ -9,8 +9,7 @@ import Education from "../components/sections/Education";
 export default function Home() {
   return (
     <main className={styles.main}>
-      {/* <Contact /> */}
-      <Introduction />
+      <Introduction />      
       <SkillsAndTools />
       <Experience />
       <Education />
