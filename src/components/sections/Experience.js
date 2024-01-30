@@ -8,8 +8,6 @@ import Accordion from "../accordion/Accordion";
 import nuritasLogo from '/public/images/NuritasLogo.png'
 import glofoxLogo from '/public/images/glofox.svg'
 import cloudtechLogo from '/public/images/cloudtechLogo.png'
-import HPELogo from '/public/images/HPElogo.png'
-import sonicsLogo from '/public/images/sonicsLogo.jpeg'
 import sinLogo from '/public/images/sinLogo.png'
 
 
@@ -95,7 +93,7 @@ export default function Experience() {
       duration: '1 yr 8 mos',
       location: "Dublin",
       website: 'hpe.com/ie/en/home.html',
-      logo: <Image src={HPELogo} alt="Nuritas Logo" />,
+      logo: '',
       description:
         "Specialist IT support to first level agents. resolving major issues with clients software and hardware. Active Directory provisioning. Coaching & mentorship of peers. Control of Knowledge Base.",
       skills: ["JavaScript", "Python", "React", "Django", "MySql"],
@@ -107,7 +105,7 @@ export default function Experience() {
       duration: '5 mos',
       location: "Dublin",
       website: 'https://avispl.co.uk/locations/dublin/',
-      logo: <Image src={sonicsLogo} alt="Nuritas Logo" />,
+      logo: '',
       description:
         "Provide IT support to engineers. First line of IT support to client. Building comms racks. Hardware install & setup. face to face client support. Cable crimping & running.",
       skills: ["JavaScript", "Python", "React", "Django", "MySql"],
