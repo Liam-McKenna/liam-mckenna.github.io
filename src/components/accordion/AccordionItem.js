@@ -28,14 +28,14 @@ const AccordionItem = ({ open, toggle, item }) => {
 
             <div onClick={toggle} className=" bg-[#740CDC] rounded-md p-5 w-full flex justify-between items-center cursor-pointer">
                 <p className='text-[22px] font-semibold '>{item.title} @ {item.company}</p>
-                <div className='flex items-center'>
-                    <div className="">{item.time}</div>
+                <div className='flex items-center gap-2'>
+                    <div className="font-semibold">{item.time}</div>
                     <div className='text-[30px]'>{open ? <AiOutlineMinus /> : <AiOutlinePlus />}</div>
                 </div>
             </div>
 
             <Collapse isOpened={open}>
-                <div className="bg-[#241D41] rounded-md mt-2 p-6 flex items-center">
+                <div className="bg-[#241D41] rounded-md mt-2 p-6 flex items-center gap-2">
                     <div className="text-container">
                         <div className="flex gap-5 pb-5">
                             <div className="location flex items-center gap-2">
@@ -53,8 +53,10 @@ const AccordionItem = ({ open, toggle, item }) => {
                         <p className=' flex-wrap '>{item.description}</p>
                         <div className="skills pt-5 flex gap-2">{item.skills.map((skill, index) => { return <SkillTag key={index} skill={skill} /> })}</div>
                     </div>
-                    <div className="w-[150px] min-w-[150px] h-[150px] rounded-full bg-gradient-to-r from-green-400 to-blue-500">Logo
-                        <Image src={nuritasLogo} alt="Description of image" width={500} height={500} />
+                    <div className="w-[150px] min-w-[150px] h-[150px] rounded-full bg-gradient-to-r from-green-400 to-blue-500 overflow-hidden flex items-center justify-center ">
+                        <div className=" w-[140px] min-w-[140px] h-[140px] rounded-full bg-gradient-to-r from-green-400 to-blue-500 overflow-hidden ">
+                            <Image src={nuritasLogo} alt="Description of image" width={500} height={500} />
+                        </div>
                     </div>
                 </div>
             </Collapse >
