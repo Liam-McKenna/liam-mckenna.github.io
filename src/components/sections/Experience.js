@@ -49,7 +49,7 @@ export default function Experience() {
       logo: <Image src={nuritasLogo} alt="Nuritas Logo" />,
       description:
         "Developed and maintained an internal data warehouse and user interface Collaborated with Data Science teams to build APIs and logic functions Championed UI/UX design, improving and implementing new designs into React",
-      skills: ["JavaScript", "Python", "React", "Django", "MySql"],
+      skills: ["JavaScript", "CSS/Sass", "Ui Design", "Python", "React", "Next.js", "Django", "MySql", "gitlab", "API Dev",],
     },
     {
       title: "Web Developer",
@@ -62,11 +62,11 @@ export default function Experience() {
       logo: '',
       description:
         "Working directly with Clients to design and develope full stack website aplications. Focus on the MERN stack with React frontend and Node/Express backend. Data bases focused on SQL or MongoDB. Designwork in photoshop and Figma",
-      skills: ["JavaScript", "Python", "React", "Django", "MySql"],
+      skills: ["JavaScript", "React", "Express.js", "MongoDB"],
     },
     {
       title: "Web Support Intern",
-      company: "Glofox",
+      company: "Glo fox",
       time: "Aug 2020 - Feb 2021",
       duration: '7 mos',
       location: "Dublin",
@@ -75,7 +75,7 @@ export default function Experience() {
       logo: <Image src={glofoxLogo} alt="Glofox Logo" />,
       description:
         "Worked Closely with B2B the integration of the Glofox Web plaform into the clients dedicated websites. First line of support of all web Developement quieres both internally and externally.",
-      skills: ["JavaScript", "Python", "React", "Django", "MySql"],
+      skills: ["JavaScript", "HTML", "Angular", "CSS", 'Wordpress',],
     },
     {
       title: "Software Developer Intern",
@@ -88,7 +88,7 @@ export default function Experience() {
       logo: <Image src={cloudtechLogo} alt="Cloudtech Logo" />,
       description:
         "Custom Software Solutions. CRM Setup & Management. Native & Web development. Project Management & Documentation.",
-      skills: ["JavaScript", "Python", "React", "Django", "MySql"],
+      skills: ["JavaScript", "CMS", "REST API", "ZOHO", "Salesforce"],
     },
     {
       title: "1st & 2nd Tech Support",
@@ -101,7 +101,7 @@ export default function Experience() {
       logo: '',
       description:
         "Specialist IT support to first level agents. resolving major issues with clients software and hardware. Active Directory provisioning. Coaching & mentorship of peers. Control of Knowledge Base.",
-      skills: ["JavaScript", "Python", "React", "Django", "MySql"],
+      skills: ["ServiceNow", "Windows Support", "System Directory", "Customer Tech Support"],
     },
     {
       title: "Audio Visual Technician",
@@ -114,7 +114,7 @@ export default function Experience() {
       logo: '',
       description:
         "Provide IT support to engineers. First line of IT support to client. Building comms racks. Hardware install & setup. face to face client support. Cable crimping & running.",
-      skills: ["JavaScript", "Python", "React", "Django", "MySql"],
+      skills: ["Customer Support", "On-site Installation", "Server Hardware", "Network install", "Audio & visual Hardware"],
     },
     {
       title: "Graphic Designer & Media Manager",
@@ -127,7 +127,7 @@ export default function Experience() {
       logo: <Image src={sinLogo} alt="Sin Logo" />,
       description:
         "Full creative control of the company. Full Adobe Suite competence. Start-to-finish design projects. Budget setting and cash flow. Club and event creation. Promotion and marketing.",
-      skills: ["JavaScript", "Python", "React", "Django", "MySql"],
+      skills: ["Graphic Design", "Event Management", "Customer Support", "Budget & Cashflow", "Marketing", "Videography"],
     },
   ];
 
