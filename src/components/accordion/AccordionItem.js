@@ -35,9 +35,13 @@ const AccordionItem = ({ open, toggle, item }) => {
                             <div className="location flex items-center gap-2">
                                 <FaLocationDot color='#BB77FF' />
                                 {item.location}</div>
-                            <div className="website flex items-center gap-2">
-                                <CgWebsite color='#BB77FF' />
-                                {item.website}</div>
+
+
+                            <a href={item.websiteLink} target="_blank" rel="noopener">
+                                <div className="website flex items-center gap-2">
+                                    <CgWebsite color='#BB77FF' />
+                                    {item.websiteText}</div>
+                            </a>
                             <div className="duration flex items-center gap-2">
                                 <GiDuration color='#BB77FF' />
                                 <div className="duration">{item.duration}</div>
