@@ -6,12 +6,6 @@ import { FaLocationDot } from "react-icons/fa6";
 import { CgWebsite } from "react-icons/cg";
 import { GiDuration } from "react-icons/gi";
 
-//images
-import nuritasLogo from '/public/images/NuritasLogo.png'
-
-
-
-
 const AccordionItem = ({ open, toggle, item }) => {
 
 
@@ -54,8 +48,8 @@ const AccordionItem = ({ open, toggle, item }) => {
                         <div className="skills pt-5 flex gap-2">{item.skills.map((skill, index) => { return <SkillTag key={index} skill={skill} /> })}</div>
                     </div>
                     <div className="w-[150px] min-w-[150px] h-[150px] rounded-full bg-gradient-to-r from-green-400 to-blue-500 overflow-hidden flex items-center justify-center ">
-                        <div className=" w-[140px] min-w-[140px] h-[140px] rounded-full bg-gradient-to-r from-green-400 to-blue-500 overflow-hidden ">
-                            <Image src={nuritasLogo} alt="Description of image" width={500} height={500} />
+                        <div className=" w-[140px] min-w-[140px] h-[140px] rounded-full bg-[#241D41] overflow-hidden flex items-center justify-center">
+                            {item.logo}
                         </div>
                     </div>
                 </div>

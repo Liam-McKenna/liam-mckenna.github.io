@@ -1,8 +1,17 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from 'next/image'
 import styles from "./experience.module.scss";
 import Accordion from "../accordion/Accordion";
+//images
+import nuritasLogo from '/public/images/NuritasLogo.png'
+import glofoxLogo from '/public/images/glofox.svg'
+import cloudtechLogo from '/public/images/cloudtechLogo.png'
+import HPELogo from '/public/images/HPElogo.png'
+import sonicsLogo from '/public/images/sonicsLogo.jpeg'
+import sinLogo from '/public/images/sinLogo.png'
+
 
 export default function Experience() {
   const [openPopupIndex, setOpenPopupIndex] = useState(null);
@@ -38,6 +47,7 @@ export default function Experience() {
       duration: '2 yrs',
       location: "Dublin",
       website: 'Nuritas.com',
+      logo: <Image src={nuritasLogo} alt="Nuritas Logo" />,
       description:
         "Developed and maintained an internal data warehouse and user interface Collaborated with Data Science teams to build APIs and logic functions Championed UI/UX design, improving and implementing new designs into React",
       skills: ["JavaScript", "Python", "React", "Django", "MySql"],
@@ -49,6 +59,7 @@ export default function Experience() {
       duration: '6 mos',
       location: "Dublin",
       website: 'NA',
+      logo: '',
       description:
         "Working directly with Clients to design and develope full stack website aplications. Focus on the MERN stack with React frontend and Node/Express backend. Data bases focused on SQL or MongoDB. Designwork in photoshop and Figma",
       skills: ["JavaScript", "Python", "React", "Django", "MySql"],
@@ -60,6 +71,7 @@ export default function Experience() {
       duration: '7 mos',
       location: "Dublin",
       website: 'Glowfox.com',
+      logo: <Image src={glofoxLogo} alt="Glofox Logo" />,
       description:
         "Worked Closely with B2B the integration of the Glofox Web plaform into the clients dedicated websites. First line of support of all web Developement quieres both internally and externally.",
       skills: ["JavaScript", "Python", "React", "Django", "MySql"],
@@ -71,6 +83,7 @@ export default function Experience() {
       duration: '8 mos',
       location: "Kildare",
       website: 'Cloudtech.ie',
+      logo: <Image src={cloudtechLogo} alt="Nuritas Logo" />,
       description:
         "Custom Software Solutions. CRM Setup & Management. Native & Web development. Project Management & Documentation.",
       skills: ["JavaScript", "Python", "React", "Django", "MySql"],
@@ -82,6 +95,7 @@ export default function Experience() {
       duration: '1 yr 8 mos',
       location: "Dublin",
       website: 'hpe.com/ie/en/home.html',
+      logo: <Image src={HPELogo} alt="Nuritas Logo" />,
       description:
         "Specialist IT support to first level agents. resolving major issues with clients software and hardware. Active Directory provisioning. Coaching & mentorship of peers. Control of Knowledge Base.",
       skills: ["JavaScript", "Python", "React", "Django", "MySql"],
@@ -93,6 +107,7 @@ export default function Experience() {
       duration: '5 mos',
       location: "Dublin",
       website: 'https://avispl.co.uk/locations/dublin/',
+      logo: <Image src={sonicsLogo} alt="Nuritas Logo" />,
       description:
         "Provide IT support to engineers. First line of IT support to client. Building comms racks. Hardware install & setup. face to face client support. Cable crimping & running.",
       skills: ["JavaScript", "Python", "React", "Django", "MySql"],
@@ -104,6 +119,7 @@ export default function Experience() {
       duration: '5 yrs 4 mos',
       location: "Dublin",
       website: 'facebook.com/DublinSin/',
+      logo: <Image src={sinLogo} alt="Nuritas Logo" />,
       description:
         "Full creative control of the company. Full Adobe Suite competence. Start-to-finish design projects. Budget setting and cash flow. Club and event creation. Promotion and marketing.",
       skills: ["JavaScript", "Python", "React", "Django", "MySql"],
