@@ -14,7 +14,7 @@ const Accordion = ({ data }) => {
     }
 
     return (
-        <div className='h-screen grid place-items-center m-5 max-w-4xl'>
+        <div className='h-100 grid gap-5 place-items-center m-5 max-w-4xl'>
             {data.map((item, index) => {
                 return <AccordionItem key={index} item={item} open={index === open} toggle={() => toggle(index)} />
             })}

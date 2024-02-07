@@ -18,25 +18,22 @@ const AccordionItem = ({ open, toggle, item }) => {
     }
 
     return (
-        <div className='pt-[10px]'>
-
+        <div className='w-full'>
             <div onClick={toggle} className=" bg-[#740CDC] rounded-md p-5 w-full flex justify-between items-center cursor-pointer">
-                <p className='text-[22px] font-semibold '>{item.title} @ {item.company}</p>
+                <p className='text-[14px] md:text-[22px] font-semibold '>{item.title} @ {item.company}</p>
                 <div className='flex items-center gap-2'>
-                    <div className="font-semibold">{item.time}</div>
-                    <div className='text-[30px]'>{open ? <AiOutlineMinus /> : <AiOutlinePlus />}</div>
+                    <div className="font-semibold hidden md:block">{item.time}</div>
+                    <div className='text-[22px] md:text-[30px]'>{open ? <AiOutlineMinus /> : <AiOutlinePlus />}</div>
                 </div>
             </div>
-
             <Collapse isOpened={open}>
-                <div className="bg-[#241D41] rounded-md mt-2 p-6 flex items-center gap-2">
+                <div className="bg-[#241D41] rounded-md mt-2 p-6 flex flex-col-reverse md:items-center gap-2 md:flex-row">
+
                     <div className="text-container">
-                        <div className="flex gap-5 pb-5">
+                        <div className="flex gap-5 pb-5 justify-start">
                             <div className="location flex items-center gap-2">
                                 <FaLocationDot color='#BB77FF' />
                                 {item.location}</div>
-
-
                             <a href={item.websiteLink} target="_blank" rel="noopener">
                                 <div className="website flex items-center gap-2">
                                     <CgWebsite color='#BB77FF' />
@@ -48,14 +45,16 @@ const AccordionItem = ({ open, toggle, item }) => {
 
                             </div>
                         </div>
-                        <p className=' flex-wrap '>{item.description}</p>
-                        <div className="skills pt-5 flex gap-2 flex-wrap">{item.skills.map((skill, index) => { return <SkillTag key={index} skill={skill} /> })}</div>
+                        <p className='flex-wrap'>{item.description}</p>
+                        <div className="skills pt-5 flex gap-2 flex-wrap justify-start">{item.skills.map((skill, index) => { return <SkillTag key={index} skill={skill} /> })}</div>
                     </div>
-                    <div className="w-[150px] min-w-[150px] h-[150px] rounded-full bg-gradient-to-r from-green-400 to-blue-500 overflow-hidden flex items-center justify-center ">
-                        <div className=" w-[140px] min-w-[140px] h-[140px] rounded-full bg-[#241D41] overflow-hidden flex items-center justify-center">
+
+                    <div className="w-[105px] min-w-[105px] h-[105px] md:w-[145px] md:min-w-[145px] md:h-[145px]  rounded-full bg-gradient-to-r from-green-400 to-blue-500 overflow-hidden flex items-center justify-center ">
+                        <div className="relative  w-[100px] min-w-[100px] h-[100px] md:w-[140px] md:min-w-[140px] md:h-[140px] rounded-full bg-[#241D41] overflow-hidden flex items-center justify-center">
                             {item.logo}
                         </div>
                     </div>
+
                 </div>
             </Collapse >
 

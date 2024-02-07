@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Introduction />
-      <SkillsAndTools />
+      {/* <SkillsAndTools /> */}
       <Experience />
-      <Education />
+      {/* <Education /> */}
     </main>
   );
 }

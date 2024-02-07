@@ -85,7 +85,7 @@ export default function SkillsAndTools() {
   return (
     <div id="skills" className={styles.container}>
       <h1 className={styles.title}>🔧 Skills and recent tools</h1>
-      <Table />
+      {/* <Table /> */}
     </div>
   );
 }

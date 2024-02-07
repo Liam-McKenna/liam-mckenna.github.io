@@ -46,7 +46,7 @@ export default function Experience() {
       location: "Dublin",
       websiteText: 'Nuritas.com',
       websiteLink: 'https://Nuritas.com',
-      logo: <Image src={nuritasLogo} alt="Nuritas Logo" />,
+      logo: <Image src={nuritasLogo} alt="Nuritas Logo" layout='fill' objectFit='contain' objectPosition="center" />,
       description:
         "Developed and maintained an internal data warehouse and user interface Collaborated with Data Science teams to build APIs and logic functions Championed UI/UX design, improving and implementing new designs into React",
       skills: ["JavaScript", "CSS/Sass", "Ui Design", "Python", "React", "Next.js", "Django", "MySql", "gitlab", "API Dev",],
@@ -72,7 +72,7 @@ export default function Experience() {
       location: "Dublin",
       websiteText: 'Glofox.com',
       websiteLink: 'https://glofox.com',
-      logo: <Image src={glofoxLogo} alt="Glofox Logo" />,
+      logo: <Image src={glofoxLogo} alt="Glofox Logo" layout='fill' objectFit='contain' objectPosition="center" />,
       description:
         "Worked Closely with B2B the integration of the Glofox Web plaform into the clients dedicated websites. First line of support of all web Developement quieres both internally and externally.",
       skills: ["JavaScript", "HTML", "Angular", "CSS", 'Wordpress',],
@@ -85,7 +85,7 @@ export default function Experience() {
       location: "Kildare",
       websiteText: 'Cloudtech.ie',
       websiteLink: 'https://Cloudtech.ie',
-      logo: <Image src={cloudtechLogo} alt="Cloudtech Logo" />,
+      logo: <Image src={cloudtechLogo} alt="Cloudtech Logo" layout='fill' objectFit='contain' objectPosition="center" />,
       description:
         "Custom Software Solutions. CRM Setup & Management. Native & Web development. Project Management & Documentation.",
       skills: ["JavaScript", "CMS", "REST API", "ZOHO", "Salesforce"],
@@ -124,7 +124,7 @@ export default function Experience() {
       location: "Dublin",
       websiteText: 'Sin Nightclub',
       websiteLink: 'https://facebook.com/DublinSin/',
-      logo: <Image src={sinLogo} alt="Sin Logo" />,
+      logo: <Image src={sinLogo} alt="Sin Logo" layout='fill' objectFit='cover' objectPosition="center" />,
       description:
         "Full creative control of the company. Full Adobe Suite competence. Start-to-finish design projects. Budget setting and cash flow. Club and event creation. Promotion and marketing.",
       skills: ["Graphic Design", "Event Management", "Customer Support", "Budget & Cashflow", "Marketing", "Videography"],
