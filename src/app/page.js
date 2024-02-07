@@ -10,7 +10,7 @@ export default function Home() {
       <Introduction />
       {/* <SkillsAndTools /> */}
       <Experience />
-      {/* <Education /> */}
+      <Education />
     </main>
   );
 }

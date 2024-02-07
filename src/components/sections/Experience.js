@@ -12,30 +12,6 @@ import sinLogo from '/public/images/sinLogo.png'
 
 
 export default function Experience() {
-  const [openPopupIndex, setOpenPopupIndex] = useState(null);
-
-  const handleCardClick = (index) => {
-    if (openPopupIndex === index) {
-      setOpenPopupIndex(null);
-    } else {
-      setOpenPopupIndex(index);
-    }
-  };
-
-  const handleClickOutside = (event) => {
-    if (
-      !event.target.closest("#experience .card") &&
-      !event.target.closest(".popup")
-    ) {
-      setOpenPopupIndex(null);
-    }
-  };
-  useEffect(() => {
-    document.addEventListener("mouseup", handleClickOutside);
-    return () => {
-      document.removeEventListener("mouseup", handleClickOutside);
-    };
-  }, []);
 
   const jobs = [
     {
@@ -66,7 +42,7 @@ export default function Experience() {
     },
     {
       title: "Web Support Intern",
-      company: "Glo fox",
+      company: "Glofox",
       time: "Aug 2020 - Feb 2021",
       duration: '7 mos',
       location: "Dublin",
@@ -134,9 +110,7 @@ export default function Experience() {
   return (
     <div id="experience" className={styles.sectionContainer}>
       <h1 className="flex justify-center">Experience</h1>
-
       <Accordion data={jobs} />
-
     </div>
   );
 }

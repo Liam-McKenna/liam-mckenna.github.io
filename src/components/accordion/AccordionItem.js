@@ -45,8 +45,10 @@ const AccordionItem = ({ open, toggle, item }) => {
 
                             </div>
                         </div>
-                        <p className='flex-wrap'>{item.description}</p>
-                        <div className="skills pt-5 flex gap-2 flex-wrap justify-start">{item.skills.map((skill, index) => { return <SkillTag key={index} skill={skill} /> })}</div>
+                        <div className='flex-wrap'>{item.description}</div>
+                        {item.skills &&
+                            <div className="skills pt-5 flex gap-2 flex-wrap justify-start">{item.skills.map((skill, index) => { return <SkillTag key={index} skill={skill} /> })}</div>
+                        }
                     </div>
 
                     <div className="w-[105px] min-w-[105px] h-[105px] md:w-[145px] md:min-w-[145px] md:h-[145px]  rounded-full bg-gradient-to-r from-green-400 to-blue-500 overflow-hidden flex items-center justify-center ">
