@@ -14,11 +14,11 @@ export default function Education() {
       award: "Honours Bachelors Degree",
       time: "2018 - 2024",
       description:
-        [<p>Y1 - 1:1 (Web Applications, Adv Mathamatics, Comp Tech, Data Analytics)</p>,
-        <p>Y2 - 1:1 (Native Software Dev, Networking, Databases)</p>,
-        <p>Y3 - 1:1 (Full stack dev, Software Engineering, Adv Database, Adv Networking)</p>,
-        <p>Y4 - 1:1 (Distributed Systems, Ethical hacking, Machine learning, Security Sys)</p>,
-        <p>Y4 - (Pending) Dissertation Project </p>],
+        [<p key='1' > Y1 - 1: 1(Web Applications, Adv Mathamatics, Comp Tech, Data Analytics)</p >,
+        <p key='2'>Y2 - 1:1 (Native Software Dev, Networking, Databases)</p>,
+        <p key='3'>Y3 - 1:1 (Full stack dev, Software Engineering, Adv Database, Adv Networking)</p>,
+        <p key='4'>Y4 - 1:1 (Distributed Systems, Ethical hacking, Machine learning, Security Sys)</p>,
+        <p key='5'>Y4 - (Pending) Dissertation Project </p>],
       skills: [
         "Fundamental Computer Skills",
         "Information Systems Concepts",
