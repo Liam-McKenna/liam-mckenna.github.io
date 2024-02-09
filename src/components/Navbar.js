@@ -8,16 +8,16 @@ const Navbar = () => {
     <div className={styles.container}>
       <div className={styles.navbar}>
         <Link href="/#intro" scroll={true}>
-          Introduction
+          //Introduction
         </Link>
         <Link href="/#skills" scroll={true}>
-          Skills
+          //Skills
         </Link>
         <Link href="/#experience" scroll={true}>
-          Experience
+          //Experience
         </Link>
         <Link href="/#education" scroll={true}>
-          Education
+          //Education
         </Link>
       </div>
       <div className={styles.blur}></div>

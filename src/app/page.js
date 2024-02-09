@@ -1,4 +1,4 @@
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 import Introduction from "../components/sections/Introduction";
 import SkillsAndTools from "../components/sections/SkillsAndTools";
 import Experience from "../components/sections/Experience";
