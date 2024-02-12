@@ -1,5 +1,7 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
+import logo from '/public/LMK-logo.svg'
 
 import styles from "./navbar.module.scss";
 
@@ -13,6 +15,7 @@ const Navbar = () => {
         <Link href="/#skills" scroll={true}>
           {`//Skills`}
         </Link>
+        <Image src={logo} width={75} height={70} />
         <Link href="/#experience" scroll={true}>
           {`//Experience`}
         </Link>
