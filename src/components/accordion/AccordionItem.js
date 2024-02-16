@@ -27,7 +27,7 @@ const AccordionItem = ({ open, toggle, item }) => {
                 </div>
             </div>
             <Collapse isOpened={open}>
-                <div className="bg-[#241D41] rounded-md mt-2 p-6 flex flex-col-reverse md:items-center gap-2 md:flex-row">
+                <div className="bg-[#241D41] rounded-md mt-2 p-6 flex justify-between flex-col-reverse md:items-center gap-2 md:flex-row">
 
                     <div className="text-container">
                         <div className="flex gap-5 pb-5 justify-start">
