@@ -13,7 +13,7 @@ const Navbar = () => {
 
 
   return (
-    <div>
+    <div className="fixed z-10 top-0 w-100 flex justify-center">
       <div className={`${styles.hamburger}`} onClick={() => setOpen(!open)}>
         <div className={styles.line1}></div>
         <div className={styles.line2}></div>
@@ -21,26 +21,22 @@ const Navbar = () => {
       </div>
 
       <div className={`${styles.container} ${open ? styles.navOpen : styles.navClose}`}>
-        <div className={styles.blur}>
-          <div className={styles.navbar} onClick={() => setOpen(false)}>
-            <Link href="/#intro" scroll={true}>
-              {`//Introduction`}
-            </Link>
-            <Link href="/#skills" scroll={true}>
-              {`//Skills`}
-            </Link>
-            <Image src={logo} width={75} height={70} />
-            <Link href="/#experience" scroll={true}>
-              {`//Experience`}
-            </Link>
-            <Link href="/#education" scroll={true}>
-              {`//Education`}
-            </Link>
-          </div>
-          {/* {
-        isMobile &&
-        (<Link>Hello</Link>)
-      } */}
+        <div className={styles.navbar} onClick={() => setOpen(false)}>
+          <Link href="/#intro" scroll={true}>
+            {`//Introduction`}
+          </Link>
+          <Link href="/#skills" scroll={true}>
+            {`//Skills`}
+          </Link>
+
+          <Image className={styles.logo} src={logo} width={75} height={70} />
+
+          <Link href="/#experience" scroll={true}>
+            {`//Experience`}
+          </Link>
+          <Link href="/#education" scroll={true}>
+            {`//Education`}
+          </Link>
         </div>
       </div >
     </div>
