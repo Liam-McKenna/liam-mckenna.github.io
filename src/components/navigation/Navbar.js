@@ -15,9 +15,9 @@ const Navbar = () => {
   return (
     <div className="fixed z-10 top-0 w-100 flex justify-center">
       <div className={`${styles.hamburger}`} onClick={() => setOpen(!open)}>
-        <div className={styles.line1}></div>
-        <div className={styles.line2}></div>
-        <div className={styles.line3}></div>
+        <div className={`${open ? styles.line1Active : styles.line1}`}></div>
+        <div className={`${open ? styles.line2Active : styles.line2}`}></div>
+        <div className={`${open ? styles.line3Active : styles.line3}`}></div>
       </div>
 
       <div className={`${styles.container} ${open ? styles.navOpen : styles.navClose}`}>
