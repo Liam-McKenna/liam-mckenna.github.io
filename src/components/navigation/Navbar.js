@@ -25,8 +25,8 @@ const Navbar = () => {
           <Link href="/#intro" scroll={true}>
             {`//Introduction`}
           </Link>
-          <Link href="/#skills" scroll={true}>
-            {`//Skills`}
+          <Link href="/#expertise" scroll={true}>
+            {`//Expertise`}
           </Link>
 
           <Image className={styles.logo} src={logo} width={75} height={70} />
