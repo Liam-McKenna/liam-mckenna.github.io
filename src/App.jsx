@@ -1,4 +1,4 @@
-import { Suspense } from 'react'
+import { Suspense, useEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import Navbar from './components/layout/Navbar.jsx'
@@ -20,6 +20,10 @@ function PageTransition({ children }) {
 
 export default function App() {
   const location = useLocation()
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'auto' })
+  }, [location.pathname])
 
   return (
     <div className="flex min-h-screen flex-col bg-background text-white">

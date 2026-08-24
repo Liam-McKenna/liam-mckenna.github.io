@@ -9,7 +9,7 @@ import { projects } from '../data/projects.js'
 const stats = [
   { value: 55, label: 'Automated tests' },
   { value: 150, label: 'Customer webshops' },
-  { value: 30, label: 'Daily platform users', suffix: '+' },
+  { value: 30, label: 'Daily platform users' },
   { value: 130, label: 'Schema attributes mapped', suffix: '+' },
 ]
 
@@ -25,7 +25,7 @@ export default function Home() {
           <Button href={profile.resumeUrl} download>
             Download CV
           </Button>
-          <Button href="/experience" variant="outline">
+          <Button to="/experience" variant="outline">
             View experience
           </Button>
         </div>

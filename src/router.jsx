@@ -5,6 +5,7 @@ const Experience = lazy(() => import('./pages/Experience.jsx'))
 const Projects = lazy(() => import('./pages/Projects.jsx'))
 const ProjectDetail = lazy(() => import('./pages/ProjectDetail.jsx'))
 const About = lazy(() => import('./pages/About.jsx'))
+const NotFound = lazy(() => import('./pages/NotFound.jsx'))
 
 export const navLinks = [
   { path: '/', label: 'Home' },
@@ -19,4 +20,5 @@ export const routeElements = [
   { path: '/projects', Component: Projects },
   { path: '/projects/:slug', Component: ProjectDetail },
   { path: '/about', Component: About },
+  { path: '*', Component: NotFound },
 ]
