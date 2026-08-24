@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { navLinks } from '../../router.jsx'
+import { useMediaQuery } from '../../hooks/useMediaQuery.js'
 
 const linkClasses = ({ isActive }) =>
   `font-mono text-sm uppercase tracking-wider transition-colors ${
@@ -10,6 +11,11 @@ const linkClasses = ({ isActive }) =>
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
+  const isDesktop = useMediaQuery('(min-width: 768px)')
+
+  useEffect(() => {
+    if (isDesktop) setOpen(false)
+  }, [isDesktop])
 
   return (
     <header className="sticky top-0 z-20 border-b border-border/60 bg-background/80 backdrop-blur">
