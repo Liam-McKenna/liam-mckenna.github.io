@@ -8,8 +8,14 @@
   }
 
   body {
-    @apply bg-slate-950 text-white antialiased;
-    font-family: 'Inter', sans-serif;
+    @apply bg-background text-white antialiased font-sans;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
   }
 }
 
