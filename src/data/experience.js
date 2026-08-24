@@ -10,10 +10,10 @@ export const currentRoles = [
     summary:
       'Sole QA engineer for extended periods on a B2B ecommerce platform serving around 150 customer webshops, each with its own configuration and ERP integration.',
     bullets: [
-      'Sole QA engineer for extended periods on a B2B ecommerce platform serving around 150 customer webshops, each with its own configuration and ERP integration (SAP, Business Central, CE, F&O), including full cover during a colleague's absence.',
-      'Introduced the company's first automated end-to-end test coverage. Designed and built a Cypress suite from scratch across three product areas — webshop, management interface and CPQ portal — now 18 spec files, 55 tests and 24 custom commands.',
+      'Sole QA engineer for extended periods on a B2B ecommerce platform serving around 150 customer webshops, each with its own configuration and ERP integration (SAP, Business Central, CE, F&O), including full cover during a colleague’s absence.',
+      'Introduced the company’s first automated end-to-end test coverage. Designed and built a Cypress suite from scratch across three product areas — webshop, management interface and CPQ portal — now 18 spec files, 55 tests and 24 custom commands.',
       'Built it as a data-driven framework: one spec runs against 13 configured customer sites using per-site capability flags, and handles two divergent checkout implementations from configuration rather than duplicated specs.',
-      'Solved the single sign-on authentication barrier that had previously made automated testing impossible on the platform; added accessibility checks with cypress-axe and authored the project's testing strategy and data-cy selector conventions.',
+      'Solved the single sign-on authentication barrier that had previously made automated testing impossible on the platform; added accessibility checks with cypress-axe and authored the project’s testing strategy and data-cy selector conventions.',
       'Manual acceptance and regression testing against ticket criteria in a Kanban flow, across VPN-accessed staging environments and local instances restored from customer databases. Set up own SSH-based remote workflow into internal servers.',
       'Contributed to adoption of Azure DevOps Test Plans for structured test-case management.',
     ],
