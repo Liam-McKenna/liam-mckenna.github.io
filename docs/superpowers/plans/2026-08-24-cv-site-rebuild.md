@@ -1569,11 +1569,20 @@ git commit -m "Add UI primitives and the real Home page"
 
 `src/components/experience/EarlierRolesAccordion.test.jsx`:
 
+jsdom (the Vitest test environment) doesn't implement `requestAnimationFrame`, which Framer Motion's exit animations depend on — without a mock, `AnimatePresence` may not unmount the collapsing content synchronously and the tests below would flake. Mock `framer-motion` so presence/absence is driven directly by the `isOpen` prop instead of animation completion:
+
 ```jsx
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect, vi } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import EarlierRolesAccordion from './EarlierRolesAccordion.jsx'
+
+vi.mock('framer-motion', () => ({
+  motion: {
+    div: ({ children, ...props }) => <div {...props}>{children}</div>,
+  },
+  AnimatePresence: ({ children }) => <>{children}</>,
+}))
 
 const roles = [
   { id: 'a', title: 'Role A', company: 'Company A', start: '2020', end: '2021', description: 'Description A' },
