@@ -9,11 +9,11 @@
 /coverage
 
 # next.js
-/.next/
-/out/
+# (removed — project no longer uses Next.js)
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
@@ -32,4 +32,3 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
